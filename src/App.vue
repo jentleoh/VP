@@ -1,8 +1,8 @@
 <template>
-  <div id="app">
+  <div id="vp-start">
     <div id="nav">
-      <router-link to="/">홈2
-      </router-link> |
+      <router-link to="/">홈2</router-link> |
+      <router-link to="/counter">Counter</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
@@ -30,4 +30,5 @@
     }
   }
 }
+
 </style>
