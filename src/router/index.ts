@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 import Home from '../views/Home.vue';
+import TodoPage from '../views/TodoPage.vue';
 
 Vue.use(VueRouter);
 
@@ -11,12 +12,9 @@ const routes: Array<RouteConfig> = [
     component: Home,
   },
   {
-    path: '/alert',
-    name: 'AlertForm',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AlertForm.vue'),
+    path: '/todo',
+    name: 'Todo',
+    component: TodoPage,
   },
   {
     path: '/about',
